@@ -1,8 +1,11 @@
+/* start global, variables i background*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* font importada de google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:400&display=swap");
 
 :root {
   --grad: linear-gradient(to bottom right, #8bc34a, #ff9800);
@@ -15,6 +18,8 @@
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   --c: #eaeaea;
   --g: #74d800;
+  --vPrincipal: #8bc34a;
+  font-family: "Montserrat", sans-serif;
 }
 
 .fondoPantalla {
@@ -40,16 +45,54 @@
   transform: translate(-50%, -50%);
   /**********************************************************/
 }
+/* ends global, variables i background*/
 
-/* ASIDE */
+/* start aside */
 .left {
   height: 100%;
   width: 30%;
   border-right: 2px solid var(--c);
 }
 
-/* MAIN */
+.h1Title,
+.searchContact {
+  border-bottom: 1px solid var(--c);
+  height: 70px;
+  letter-spacing: 0.5em;
+  /* display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h1Title span {
+  color: var(--vPrincipal);
+}
+
+.inputSearchContact {
+  border: none;
+  background: var(--vPrincipal);
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+}
+.searchContact form {
+  width: 80%;
+}
+.icoSearch button {
+  border: none;
+  background: var(--vPrincipal);
+  padding: 2px;
+}
+.icoSearch .icon1 {
+  height: 28px;
+  width: 28px;
+}
+
+/* ends aside */
+
+/* start main */
 .right {
   height: 100%;
   width: 70%;
 }
+/* ends main */

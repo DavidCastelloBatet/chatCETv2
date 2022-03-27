@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,8 +10,42 @@
   <body>
     <div class="fondoPantalla"></div>
     <div class="caixaChat">
-      <aside class="left"></aside>
+      <!-- start aside -->
+      <aside class="left">
+        <!-- start Titol Principal -->
+        <div class="h1Title">
+          <h1>Whats <span>CET</span></h1>
+        </div>
+        <!-- ends Titol Principal -->
+
+        <!-- start barra de busqueda de contacte (formulari)-->
+        <div class="searchContact">
+          <form action="" method="post">
+            <input
+              class="inputSearchContact"
+              id="inputSearchContact"
+              type="text"
+              placeholder="Busca el contacte..."
+            />
+          </form>
+          <div class="icoSearch">
+            <button>
+              <img
+                src="./images/search.svg"
+                alt="Buscar Contacte"
+                title="Buscar Contacte"
+                class="icon1"
+              />
+            </button>
+          </div>
+        </div>
+        <!-- ends barra de busqueda de contacto -->
+      </aside>
+      <!-- ends aside -->
+
+      <!-- start main -->
       <main class="right"></main>
+      <!-- ends main-->
     </div>
   </body>
 </html>
