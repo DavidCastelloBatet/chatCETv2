@@ -54,6 +54,7 @@
   border-right: 2px solid var(--c);
 }
 
+/* start global aside */
 .h1Title,
 .searchContact {
   border-bottom: 1px solid var(--c);
@@ -64,8 +65,21 @@
   justify-content: center;
   align-items: center;
 }
+/* ends global aside */
+
+/* start aside h1 */
+.h1Title {
+  font-size: 1.5em;
+}
 .h1Title span {
   color: var(--vPrincipal);
+}
+/* ends aside h1*/
+
+/* start aside search contacts form */
+.searchContact form {
+  display: flex;
+  width: 90%;
 }
 
 .inputSearchContact {
@@ -75,18 +89,74 @@
   padding: 10px 15px;
   width: 100%;
 }
-.searchContact form {
-  width: 80%;
-}
-.icoSearch button {
+
+.icon1 {
   border: none;
   background: var(--vPrincipal);
-  padding: 2px;
+  padding: 6px 6px;
+  height: 36px;
+  width: 36px;
 }
-.icoSearch .icon1 {
-  height: 28px;
-  width: 28px;
+/* ends aside search form */
+
+/* start llista de contactes */
+
+ul {
+  height: 70%;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 90%;
+  overflow-y: auto;
 }
+.ava {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+li {
+  margin: 10px;
+  list-style: none;
+}
+
+.friend {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--c);
+  transition: 0.5s easy;
+}
+
+.friend:hover {
+  background: var(--c);
+}
+
+.friend span {
+  color: var(--vPrincipal);
+}
+
+.img_name {
+  display: flex;
+  align-items: center;
+}
+
+.img_name h3 {
+  font-size: 1.2em;
+  margin-left: 7px;
+}
+
+.img_name p {
+  font-size: 0.8em;
+  margin-left: 7px;
+}
+
+.friend .time {
+  font-size: 0.7em;
+}
+
+/* ends llista de contactes */
 
 /* ends aside */
 
