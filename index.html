@@ -20,11 +20,12 @@
 
         <!-- start barra de busqueda de contacte (formulari)-->
         <div class="searchContact">
-          <form action="" method="post">
+          <form action="" method="post" id="inputSearchContact">
             <input
               class="inputSearchContact"
               id="inputSearchContact"
               type="text"
+              autocomplete="off"
               placeholder="Busca el contacte..."
             />
             <input
@@ -229,6 +230,7 @@
       <main class="right">
         <!-- start capcelera -->
         <header class="right_top">
+          <!-- start usuari -->
           <div class="img_name">
             <img src="./images/avatarJo.png" alt="Avatar" class="ava" />
             <div>
@@ -236,9 +238,45 @@
               <p>Sleeping....</p>
             </div>
           </div>
-          <img class="menu" src="./images/menu.png" alt="menu" title="menu" />
+          <!-- ends usuari -->
+          <!-- start nav-->
+          <nav>
+            <img class="menu" src="./images/menu.png" alt="menu" title="menu" />
+          </nav>
+          <!-- end nav-->
         </header>
         <!-- ends capcelera -->
+
+        <!-- start section missatges -->
+        <section class="mid"></section>
+        <!-- ends section missatges -->
+
+        <!-- start seccio enviar missatge -->
+        <section class="bottom">
+          <form action="" method="post">
+            <img
+              src="./images/addFile.svg"
+              alt="Afegir Arxiu"
+              title="Afegir Arxiu"
+              class="icon3"
+            />
+            <input
+              class="input2"
+              id="inputSearchContact"
+              type="text"
+              placeholder="Escriu el missatge"
+              autocomplete="off"
+            />
+            <input
+              type="image"
+              src="./images/send.svg"
+              alt="Buscar Contacte"
+              title="Enviar missatge"
+              class="icon3"
+            />
+          </form>
+        </section>
+        <!-- ends seccio enviar missatge -->
       </main>
       <!-- ends main-->
     </div>

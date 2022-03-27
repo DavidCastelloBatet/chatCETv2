@@ -85,8 +85,8 @@
 }
 
 .inputSearchContact {
-  border: none;
-  background: var(--vPrincipal);
+  border: 1px solid var(--c);
+
   outline: none;
   padding: 10px 15px;
   width: 100%;
@@ -168,6 +168,7 @@ li {
 /* ends global main*/
 
 /* start header */
+/* start usuari */
 .right_top {
   padding: 0 15px;
   background: var(--vPrincipal);
@@ -177,11 +178,54 @@ li {
   align-items: center;
   justify-content: space-between;
 }
-
+/* ends usuari*/
+/* start menu */
 .menu {
   height: 25px;
   width: 25px;
 }
+/* ends menu */
 /* ends header */
+
+/* start section missatges */
+.mid {
+  height: 75%;
+  border-bottom: 1px solid var(--c);
+}
+/* ends section missatges */
+
+/* start seccio enviar missatge */
+.bottom {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom form {
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  background-repeat: 5px;
+  border: 1px solid lightgrey;
+}
+
+.bottom form .icon3 {
+  height: 38px;
+  width: 38px;
+  background: var(--vPrincipal);
+  padding: 0;
+}
+
+.bottom form .input2 {
+  border: none;
+  outline: none;
+  box-flex-group: transparent;
+  width: 80%;
+}
+/* ends seccio enviar missatge */
 
 /* ends main */
