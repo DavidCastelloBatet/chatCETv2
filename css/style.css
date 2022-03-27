@@ -22,6 +22,11 @@
   --vPrincipal: #8bc34a;
   font-family: "Montserrat", sans-serif;
 }
+/* oculto la barra de desplaçament - NOTA: a Mozilla
+no funciona! */
+::-webkit-scrollbar {
+  display: none;
+}
 
 .fondoPantalla {
   background: var(--grad);
@@ -199,28 +204,30 @@ li {
   padding: 30px;
 }
 
+.mid article {
+  display: flex;
+  align-items: center;
+}
+
 .meus,
 .teus {
   border-radius: 5px;
-  max-width: 90%;
-  padding: 10px 35px 5px 5px;
+  max-width: 70%;
   clear: both;
   margin: 20px 40px;
-  display: flex;
-  align-items: top;
-  justify-content: center;
+  padding: 10px;
+}
+
+.meus p,
+.teus p {
+  margin-left: 10px;
+  letter-spacing: 0.1em;
+  line-height: 1.1em;
 }
 
 .meus {
   background: var(--vPrincipal);
   float: left;
-}
-
-.meus img,
-.teus img {
-  position: relative;
-  top: -30px;
-  left: -20px;
 }
 
 .teus {
