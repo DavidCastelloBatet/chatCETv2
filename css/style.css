@@ -109,6 +109,8 @@ ul {
   margin-top: 15px;
   margin-left: 15px;
   width: 90%;
+  /* nota: per controlar 
+  l'scroll de la llista */
   overflow-y: auto;
 }
 .ava {
@@ -193,7 +195,39 @@ li {
 .mid {
   height: 75%;
   border-bottom: 1px solid var(--c);
+  overflow-y: auto;
+  padding: 30px;
 }
+
+.meus,
+.teus {
+  border-radius: 5px;
+  max-width: 90%;
+  padding: 10px 35px 5px 5px;
+  clear: both;
+  margin: 20px 40px;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+.meus {
+  background: var(--vPrincipal);
+  float: left;
+}
+
+.meus img,
+.teus img {
+  position: relative;
+  top: -30px;
+  left: -20px;
+}
+
+.teus {
+  background: var(--groc);
+  float: right;
+}
+
 /* ends section missatges */
 
 /* start seccio enviar missatge */
@@ -212,7 +246,7 @@ li {
   justify-content: space-between;
   height: 40px;
   border-radius: 5px;
-  border: 1px solid lightgrey;
+  border: 1px solid var(--c);
 }
 
 .bottom form .icon3 {
