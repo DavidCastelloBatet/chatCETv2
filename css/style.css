@@ -28,6 +28,7 @@
   background: white;
   border-radius: 5px;
   box-shadow: var(--shadow);
+  display: flex;
   height: 80vh;
   width: 80vw;
   /* Amb aquestes 4 linees centro el requadre ppral del chat*/
@@ -38,4 +39,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   /**********************************************************/
+}
+
+/* ASIDE */
+.left {
+  height: 100%;
+  width: 30%;
+  border-right: 2px solid var(--c);
+}
+
+/* MAIN */
+.right {
+  height: 100%;
+  width: 70%;
 }
