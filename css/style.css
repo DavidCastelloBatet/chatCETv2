@@ -82,11 +82,13 @@
 .searchContact form {
   display: flex;
   width: 90%;
+  border-radius: 5px;
 }
 
 .inputSearchContact {
   border: 1px solid var(--c);
-
+  color: var(--g);
+  font-size: 0.9em;
   outline: none;
   padding: 10px 15px;
   width: 100%;
@@ -96,8 +98,8 @@
   border: none;
   background: var(--vPrincipal);
   padding: 6px 6px;
-  height: 36px;
-  width: 36px;
+  height: 38px;
+  width: 38px;
 }
 /* ends aside search form */
 
@@ -200,16 +202,16 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 6px;
 }
 
 .bottom form {
   width: 90%;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 40px;
-  background-repeat: 5px;
+  border-radius: 5px;
   border: 1px solid lightgrey;
 }
 
@@ -222,6 +224,8 @@ li {
 
 .bottom form .input2 {
   border: none;
+  color: var(--g);
+  font-size: 0.9em;
   outline: none;
   box-flex-group: transparent;
   width: 80%;
