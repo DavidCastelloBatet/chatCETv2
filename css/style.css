@@ -108,14 +108,16 @@ no funciona! */
 }
 /* ends aside search form */
 
-/* start llista de contactes */
+/* start aside llista de contactes */
 ul {
   height: 70%;
   margin-top: 15px;
   margin-left: 15px;
   width: 90%;
   /* nota: per controlar 
-  l'scroll de la llista */
+  l'scroll de la llista. oferflow-y es posa
+  a l'element que tindrà l'scroll i controla l'scroll
+  vertical. overflow-x controla l'horitzontal */
   overflow-y: auto;
 }
 .ava {
@@ -165,7 +167,7 @@ li {
 .friend .time {
   font-size: 0.7em;
 }
-/* ends llista de contactes */
+/* ends aside llista de contactes */
 /* ends aside */
 
 /* start main */
@@ -222,7 +224,7 @@ li {
 .teus p {
   margin-left: 10px;
   letter-spacing: 0.1em;
-  line-height: 1.1em;
+  line-height: 1.2em;
 }
 
 .meus {
